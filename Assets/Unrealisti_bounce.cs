@@ -11,12 +11,13 @@ public class Unrealisti_bounce : MonoBehaviour
     {
         
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(0, -5);
+        rb.velocity = new Vector2(0, -1);
     }
 
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = new Vector2(0, 0);
+        float speed = 4;
+        rb.velocity = rb.velocity.normalized * speed;
     }
 }
