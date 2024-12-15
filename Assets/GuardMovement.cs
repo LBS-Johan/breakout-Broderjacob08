@@ -17,12 +17,12 @@ public class GuardMovement : MonoBehaviour
         rb.velocity = new Vector2(0, 0);
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            rb.velocity = new Vector2(40, 0);
+            rb.velocity = new Vector2(50, 0);
         }
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            rb.velocity = new Vector2(-40, 0);
+            rb.velocity = new Vector2(-50, 0);
         }
     }
 }
